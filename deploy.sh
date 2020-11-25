@@ -9,8 +9,10 @@ npm run build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-# deploy to github
+# Set CNAME for "gh-pages" branch
+echo 'dbdgs.cn' > CNAME
 
+# deploy to github
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:dbdgs/dbdgs.github.io
