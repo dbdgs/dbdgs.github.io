@@ -17,8 +17,6 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
   msg='来自github actions的自动部署'
   githubUrl=https://dbdgs:${GITHUB_TOKEN}@github.com/dbdgs/dbdgs.github.io
-  git config --global user.name "Github Action Bot"
-  git config --global user.email "action@github.com"
 fi
 git init
 git add -A
