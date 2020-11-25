@@ -60,8 +60,8 @@ module.exports = {
     sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi' // 可选的
+      name: 'geekzl.com', // 必需
+      link: 'https://github.com/wpfgeek' // 可选的
     },
     blogger: { // 博主信息，显示在首页侧边栏
       avatar: 'https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg',
@@ -74,12 +74,12 @@ module.exports = {
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com'
+          link: 'mailto:legege007@yeah.net'
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi'
+          link: 'https://github.com/wpfgeek'
         },
         {
           iconClass: 'icon-erji',
@@ -89,8 +89,8 @@ module.exports = {
       ]
     },
     footer: { // 页脚信息
-      createYear: 2019, // 博客创建年份
-      copyrightInfo: 'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      createYear: 2020, // 博客创建年份
+      copyrightInfo: '大白的故事 | <a href="https://github.com/dbdgs/dbdgs.github.io/blob/main/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
     }
   },
   plugins: [ // 插件
@@ -120,7 +120,7 @@ module.exports = {
         },
         {
           title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20'
+          frontUrl: 'https://www.baidu.com/s?wd=site%3Adbdgs.cn%20'
         }
       ]
     }],
