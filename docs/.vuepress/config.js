@@ -115,7 +115,7 @@ module.exports = {
       'vuepress-plugin-canonical',
       {
         baseURL: 'https://dbdgs.cn', // base url for your canonical link, optional, default: ''
-        stripExtension: true // strip '.html' , optional, default: false
+        stripExtension: false // strip '.html' , optional, default: false
       }
     ],
     ['autometa', autometa_options],
