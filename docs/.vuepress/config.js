@@ -102,6 +102,13 @@ module.exports = {
       // 排除无实际内容的页面
       exclude: ["/404.html"]
     }],
+    [
+      'vuepress-plugin-canonical',
+      {
+        baseURL: 'https://dbdgs.cn', // base url for your canonical link, optional, default: ''
+        stripExtension: true // strip '.html' , optional, default: false
+      }
+    ],
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
       thirdparty: [ // 可选，默认 []
         {
