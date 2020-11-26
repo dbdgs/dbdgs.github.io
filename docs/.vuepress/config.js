@@ -1,5 +1,14 @@
 const nav = require('./config/nav.js');
 
+// set your global autometa options - override in page frontmatter
+const autometa_options = {
+  site: {
+    name: 'Bravo Yeung',
+    twitter: 'yanglr',
+  },
+  canonical_base: 'https://dbdgs.cn',
+};
+
 module.exports = {
   title: "大白的故事",
   description: '大白的技术故事，专注于分享IT前沿技术、干货知识、热点资讯等，同时分享硬核的自媒体赚钱方法、推广技巧和运营实战，技术文章涵盖python,dotnet,node.js,git,github等。', // 描述,以 <meta> 标签渲染到页面html中
@@ -109,6 +118,7 @@ module.exports = {
         stripExtension: true // strip '.html' , optional, default: false
       }
     ],
+    ['autometa', autometa_options],
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
       thirdparty: [ // 可选，默认 []
         {
