@@ -5,6 +5,8 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
+  <SchemaStructuredData:key="$page.path"></SchemaStructuredData>
+
     <Navbar
       v-if="shouldShowNavbar"
       @toggle-sidebar="toggleSidebar"
@@ -69,6 +71,7 @@
 </template>
 
 <script>
+import SchemaStructuredData from '@theme/components/SchemaStructuredData.vue'
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
@@ -87,7 +90,7 @@ const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
 const NAVBAR_HEIGHT = 58 // 导航栏高度
 
 export default {
-  components: { Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
+  components: { SchemaStructuredData, Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
 
   data () {
     return {
