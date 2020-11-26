@@ -7,7 +7,6 @@ module.exports = {
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: '大白的故事,极客中心,个人技术博客,后台开发面试题,技术文档' }],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }],// 百度统计的站点拥有者验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
   ],
@@ -61,7 +60,7 @@ module.exports = {
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
       name: 'geekzl.com', // 必需
-      link: 'https://github.com/wpfgeek' // 可选的
+      // link: 'https://github.com/wpfgeek' // 可选的
     },
     blogger: { // 博主信息，显示在首页侧边栏
       avatar: 'https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg',
