@@ -143,17 +143,6 @@ module.exports = {
       },
     ],
     ['autometa', autometa_options],
-    [
-      'vuepress-plugin-schema',
-      {
-        baseURL: 'https://google.com', // base url for your schema, mandatory, default: ''
-        title: 'My webpage', // title for your organization schema, mandatory, default: ''
-        socials: [  // socials urls for your schema, default: []
-            "https://www.youtube.com/channel/CHANNEL_ID",
-            "https://www.facebook.com/FACEBOOK_ID/",
-        ],
-      }
-    ],
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
       thirdparty: [ // 可选，默认 []
         {

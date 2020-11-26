@@ -13,8 +13,7 @@
   dayjs.tz.setDefault('Asia/Shanghai')
 
   export default {
-    name: 'SchemaStructuredData',
-    
+    name: 'SchemaStructuredData',    
     created () {
       if (this.$ssrContext) {
         const extra = `
@@ -36,10 +35,9 @@
 <\/script>
         `;
         this.$ssrContext.userHeadTags += extra
-        // this.$ssrContext.pageMeta += extra;
+        this.$ssrContext.pageMeta += extra;
       }
-    }
-  };
+  },
 
     computed: {
       meta_data() {
@@ -384,5 +382,5 @@
         return JSON.stringify(structuredData, null, 4)
       },
     },
-  }
+}
 </script>
