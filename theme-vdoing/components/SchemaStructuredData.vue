@@ -14,6 +14,32 @@
 
   export default {
     name: 'SchemaStructuredData',
+    
+    created () {
+      if (this.$ssrContext) {
+        const extra = `
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://code.luasoftware.com/",
+  "author": {
+    "@type": "Person",
+    "name": "Desmond Lua"
+  },
+  "description": "Tutorials and snippets for programming languages, frameworks, tools, etc.",
+  "image": "https://code.luasoftware.com/img/cover.jpg",
+  "thumbnailUrl": "https://code.luasoftware.com/img/logo.png",
+  "license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
+  "name": "Lua Software Code"
+}
+<\/script>
+        `;
+        this.$ssrContext.userHeadTags += extra
+        // this.$ssrContext.pageMeta += extra;
+      }
+    }
+  };
 
     computed: {
       meta_data() {
@@ -354,6 +380,7 @@
             dayjs(this.meta_data.published).format('YYYY') || dayjs(this.meta_data.modified).format('YYYY'),
         })
 
+        this.$ssrContext.pageMeta += JSON.stringify(structuredData, null, 4);
         return JSON.stringify(structuredData, null, 4)
       },
     },
