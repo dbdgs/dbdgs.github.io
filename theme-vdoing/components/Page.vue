@@ -50,7 +50,7 @@ export default {
     this.updateBarConfig = this.$themeConfig.updateBar;
 
     if (typeof this.$ssrContext !== "undefined") {
-    var page_title = title: this.$page.title ? this.$page.title.toString().replace(/["|'|\\]/g, '') : null;
+    var page_title = this.$page.title ? this.$page.title.toString().replace(/["|'|\\]/g, '') : null;
 
     const data =
     {
@@ -177,7 +177,7 @@ export default {
 
     //creating the script element and storing the JSON-LD
 
-    var my_jsonld = '<script type="application/ld+json">\n' + JSON.stringify(data) + "\n</script>";
+    var my_jsonld = '\n<script type="application/ld+json">\n' + JSON.stringify(data, null, 2) + "\n<\/script>";
     this.$ssrContext.userHeadTags += my_jsonld;
 
     }

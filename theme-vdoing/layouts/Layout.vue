@@ -5,7 +5,6 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
-  <SchemaStructuredData:key="$page.path"></SchemaStructuredData>
 
     <Navbar
       v-if="shouldShowNavbar"
@@ -71,7 +70,6 @@
 </template>
 
 <script>
-import SchemaStructuredData from '@theme/components/SchemaStructuredData.vue'
 import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
@@ -91,7 +89,7 @@ const NAVBAR_HEIGHT = 58 // 导航栏高度
 
 export default {
   name: 'theme-container',
-  components: { SchemaStructuredData, Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
+  components: { Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
 
   data () {
     return {
