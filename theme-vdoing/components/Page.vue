@@ -50,8 +50,9 @@ export default {
     this.updateBarConfig = this.$themeConfig.updateBar;
 
     if (typeof this.$ssrContext !== "undefined") {
-      const extra = `
-<script type="application/ld+json">
+    var page_title = title: this.$page.title ? this.$page.title.toString().replace(/["|'|\\]/g, '') : null;
+
+    const data =
     {
         "@context": "https://schema.org",
         "@graph": [
@@ -62,7 +63,7 @@ export default {
                 "url": "https://cdn.jsdelivr.net/gh/yanglr/images/webster-dict-jekyll1.png",
                 "width": 266,
                 "height": 266,
-                "caption": "github的jekyll是什么意思-大白的故事 "
+                "caption": page_title + " - 大白的故事"
             },
             {
                 "@type": "WebPage",
@@ -172,10 +173,13 @@ export default {
                 "mainEntityOfPage": "https://dbdgs.cn"
             }
         ]
-    }
-<\/script>
-`;
-      this.$ssrContext.userHeadTags += extra;
+    };
+
+    //creating the script element and storing the JSON-LD
+
+    var my_jsonld = '<script type="application/ld+json">\n' + JSON.stringify(data) + "\n</script>";
+    this.$ssrContext.userHeadTags += my_jsonld;
+
     }
   },
   computed: {
