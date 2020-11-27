@@ -11,18 +11,19 @@ const autometa_options = {
 
 const myJsonld = `
 {
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "url": "https://code.luasoftware.com/",
-  "author": {
-    "@type": "Person",
-    "name": "Desmond Lua"
-  },
-  "description": "Tutorials and snippets for programming languages, frameworks, tools, etc.",
-  "image": "https://code.luasoftware.com/img/cover.jpg",
-  "thumbnailUrl": "https://code.luasoftware.com/img/logo.png",
-  "license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
-  "name": "Lua Software Code"
+ "@context": "http://schema.org",
+ "@type": "WebSite",
+ "url": "https://dbdgs.cn/",
+ "author": {
+  "@type": "Person",
+  "name": "大白的故事"
+ },
+
+ "description": "大白的故事 - 文章",
+ "image": "https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg",
+ "thumbnailUrl": "https://cdn.jsdelivr.net/gh/dbdgs/images@main/geekzl.png",
+ "license": "MIT License",
+ "name": "大白的故事"
 }
 `;
 

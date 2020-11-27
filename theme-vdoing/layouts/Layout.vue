@@ -84,6 +84,13 @@ import { resolveSidebarItems } from '../util'
 import storage from 'good-storage' // 本地存储
 import _ from 'lodash'
 
+import * as dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+import timezone from 'dayjs/plugin/timezone'
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.tz.setDefault('Asia/Shanghai')
+
 const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
 const NAVBAR_HEIGHT = 58 // 导航栏高度
 
@@ -164,6 +171,145 @@ export default {
     const sidebarOpen = this.$themeConfig.sidebarOpen
     if (sidebarOpen === false) {
       this.isSidebarOpen = sidebarOpen
+    }
+
+    var siteUrl = this.$site.themeConfig.domain;      
+    if (typeof this.$ssrContext !== "undefined" || this.$page.path.length <= 1) {    
+      var pageTitle = this.$page.title ? this.$page.title.toString().replace(/["|'|\\]/g, '') : null;
+      var imageUrl = this.$page.frontmatter.image ? this.$page.frontmatter.image : 'https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg';
+      var siteName = this.$site.title || null;
+      var publishedTime = dayjs(this.$page.frontmatter.date).toISOString() || dayjs(this.$page.lastUpdated).toISOString();
+      var modifiedTime = dayjs(this.$page.lastUpdated).toISOString();
+      var pageUrl = siteUrl + this.$page.path;
+      var pageType = pageUrl == siteUrl ? 'website' : 'article' ;
+      // var author = this.$site.themeConfig.personalInfo ? this.$site.themeConfig.personalInfo : null;    
+
+      const data =
+      {
+          "@context": "https://schema.org",
+          "@graph": [
+              {
+                  "@type": "ImageObject",
+                  "@id": imageUrl,
+                  "inLanguage": "zh-CN",
+                  "url": imageUrl,
+                  "width": 266,
+                  "height": 266,
+                  "caption": pageTitle + " - " + siteName
+              },
+              {
+                  "@type": "WebPage",
+                  "@id": pageUrl,
+                  "url": pageUrl,
+                  "name": this.$title,
+                  "isPartOf": {
+                      "@id": siteUrl,
+                      "name": siteName
+                  },
+                  "primaryImageOfPage": {
+                      "@id": siteUrl,
+                      "name": siteName
+                  },
+                  "datePublished": "",
+                  "dateModified": modifiedTime,
+                  "description": this.$description,
+                  "inLanguage": "zh-CN",
+                  "potentialAction": [
+                      {
+                          "@type": "ReadAction",
+                          "target": [
+                              pageUrl
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "@type": pageType,
+                  "@id": pageUrl,
+                  "isPartOf": {
+                      "@id": pageUrl
+                  },
+                  "author": {
+                      "@id": siteUrl,
+                      "name": siteName
+                  },
+                  "headline": this.$title,
+                  "datePublished": publishedTime,
+                  "dateModified": modifiedTime,
+                  "commentCount": 30,
+                  "publisher": {
+                      "@id": siteUrl,
+                      "name": siteName
+                  },
+                  "image": {
+                      "@id": imageUrl
+                  },
+                  "articleSection": this.$title,
+                  "inLanguage": "zh-CN",
+                  "potentialAction": [
+                      {
+                          "@type": "CommentAction",
+                          "name": "Comment",
+                          "target": [
+                              pageUrl
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "@type": "Person",
+                  "@id": siteUrl,
+                  "name": siteName
+              },
+              {
+                  "@context": "https://schema.org/",
+                  "@type": "Recipe",
+                  "name": this.$description,
+                  "description": this.$description,
+                  "author": {
+                      "@type": "Person",
+                      "name": siteName
+                  },
+                  "image": [
+                      imageUrl
+                  ],
+                  "url": pageUrl,
+                  "recipeIngredient": [
+                      "第1步",
+                      "第2步",
+                      "第3步",
+                      "第4步"
+                  ],
+                  "recipeInstructions": [
+                      {
+                          "@type": "HowToStep",
+                          "text": "第1步",
+                          "url": pageUrl + "#step-1"
+                      },
+                      {
+                          "@type": "HowToStep",
+                          "text": "第2步",
+                          "url": pageUrl + "#step-2"
+                      },
+                      {
+                          "@type": "HowToStep",
+                          "text": "第3步",
+                          "url": pageUrl + "#step-3"
+                      }
+                  ],
+                  "datePublished": publishedTime,
+                  "@id": pageUrl,
+                  "isPartOf": {
+                      "@id": siteUrl
+                  },
+                  "mainEntityOfPage": siteUrl
+              }
+          ]
+      };
+
+      //creating the script element and storing the JSON-LD
+      var my_jsonld = '\n<script type="application/ld+json">\n' + JSON.stringify(data, null, 2) + "\n<\/script>\n";
+      this.$ssrContext.userHeadTags += my_jsonld;
     }
   },
   beforeMount () {
