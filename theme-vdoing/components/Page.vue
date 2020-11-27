@@ -59,6 +59,29 @@ export default {
   components: { PageEdit, PageNav, ArticleInfo, Catalogue, UpdateArticle, RightMenu },
   created () {
     this.updateBarConfig = this.$themeConfig.updateBar
+
+          if (typeof this.$ssrContext !== "undefined") {
+        const extra = `
+<script type="application/ld+json">
+{
+ "@context": "http://schema.org",
+ "@type": "WebSite",
+ "url": "https://dbdgs.cn/",
+ "author": {
+  "@type": "Person",
+  "name": "大白的故事"
+ },
+ "description": "大白的故事 - 文章",
+ "image": "https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg",
+ "thumbnailUrl": "https://cdn.jsdelivr.net/gh/dbdgs/images@main/geekzl.png",
+ "license": "MIT License",
+ "name": "大白的故事"
+}
+</script>
+`;
+        this.$ssrContext.userHeadTags += extra
+        // this.$ssrContext.pageMeta += extra
+      }
   },
   computed: {
     bgStyle () {
