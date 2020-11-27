@@ -37,6 +37,13 @@ module.exports = {
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
     // ['script', { type: 'application/ld+json' }, myJsonld ],
   ],
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: '大白的故事',
+      description: '大白的技术故事，专注于分享IT前沿技术、干货知识、热点资讯等'
+    }
+  },
   markdown: {
     lineNumbers: true // 代码行号
   },
@@ -54,7 +61,7 @@ module.exports = {
     docsDir: 'docs', // 编辑的文件夹
     editLinks: true, // 启用编辑
     editLinkText: '编辑',
-
+    domain: 'https://dbdgs.cn',
     //*** 以下配置是Vdoing主题改动和新增的配置 ***//
 
     // category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。

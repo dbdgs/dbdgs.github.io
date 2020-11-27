@@ -36,6 +36,13 @@ import UpdateArticle from "./UpdateArticle.vue";
 import RightMenu from "./RightMenu.vue";
 
 import TitleBadgeMixin from "../mixins/titleBadge";
+import * as dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+import timezone from 'dayjs/plugin/timezone'
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.tz.setDefault('Asia/Shanghai')
 
 export default {
   mixins: [TitleBadgeMixin],
@@ -50,7 +57,15 @@ export default {
     this.updateBarConfig = this.$themeConfig.updateBar;
 
     if (typeof this.$ssrContext !== "undefined") {
-    var page_title = this.$page.title ? this.$page.title.toString().replace(/["|'|\\]/g, '') : null;
+    var siteUrl = this.$site.themeConfig.domain;      
+    var pageTitle = this.$page.title ? this.$page.title.toString().replace(/["|'|\\]/g, '') : null;
+    var imageUrl = this.$page.frontmatter.image ? this.$page.frontmatter.image : 'https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg';
+    var siteName = this.$site.title || null;
+    var publishedTime = dayjs(this.$page.frontmatter.date).toISOString() || dayjs(this.$page.lastUpdated).toISOString();
+    var modifiedTime = dayjs(this.$page.lastUpdated).toISOString();
+    var pageUrl = siteUrl + this.$page.path;
+    // var type = this.meta_isArticle ? 'article' : 'website';
+    // var author = this.$site.themeConfig.personalInfo ? this.$site.themeConfig.personalInfo : null;    
 
     const data =
     {
@@ -58,90 +73,90 @@ export default {
         "@graph": [
             {
                 "@type": "ImageObject",
-                "@id": "https://cdn.jsdelivr.net/gh/yanglr/images/webster-dict-jekyll1.png",
+                "@id": imageUrl,
                 "inLanguage": "zh-CN",
-                "url": "https://cdn.jsdelivr.net/gh/yanglr/images/webster-dict-jekyll1.png",
+                "url": imageUrl,
                 "width": 266,
                 "height": 266,
-                "caption": page_title + " - 大白的故事"
+                "caption": pageTitle + " - " + siteName
             },
             {
                 "@type": "WebPage",
-                "@id": "https://dbdgs.cn/why-name-jekyll.html",
-                "url": "https://dbdgs.cn/why-name-jekyll.html",
-                "name": "github的jekyll是什么意思-大白的故事 ",
+                "@id": pageUrl,
+                "url": pageUrl,
+                "name": this.$title,
                 "isPartOf": {
-                    "@id": "https://dbdgs.cn",
-                    "name": "大白的故事"
+                    "@id": siteUrl,
+                    "name": siteName
                 },
                 "primaryImageOfPage": {
-                    "@id": "https://dbdgs.cn",
-                    "name": "大白的故事"
+                    "@id": siteUrl,
+                    "name": siteName
                 },
                 "datePublished": "",
-                "dateModified": "2020-11-17T01:29:33+08:00",
-                "description": "最著名的静态站点生成器为什么取名为Jekyll? Jekyll是一个简单的静态网站生成器，github pages默认就会用这个生成器，用于生成个人、项目或组织的网站。它由GitHub联合创始人汤姆·普雷斯顿·沃纳(Tom Preston-Werner)用Ruby编写，并根据MIT许可证发布。 Je [&hellip;]",
+                "dateModified": modifiedTime,
+                "description": this.$description,
                 "inLanguage": "zh-CN",
                 "potentialAction": [
                     {
                         "@type": "ReadAction",
                         "target": [
-                            "https://dbdgs.cn/why-name-jekyll.html"
+                            pageUrl
                         ]
                     }
                 ]
             },
             {
                 "@type": "Article",
-                "@id": "https://dbdgs.cn/why-name-jekyll.html",
+                "@id": pageUrl,
                 "isPartOf": {
-                    "@id": "https://dbdgs.cn/why-name-jekyll.html"
+                    "@id": pageUrl
                 },
                 "author": {
-                    "@id": "https://dbdgs.cn",
-                    "name": "大白的故事"
+                    "@id": siteUrl,
+                    "name": siteName
                 },
-                "headline": "github的jekyll是什么意思-大白的故事 ",
-                "datePublished": "",
-                "dateModified": "2020-11-17T01:29:33+08:00",
+                "headline": this.$title,
+                "datePublished": publishedTime,
+                "dateModified": modifiedTime,
                 "commentCount": 30,
                 "publisher": {
-                    "@id": "https://dbdgs.cn",
-                    "name": "大白的故事"
+                    "@id": siteUrl,
+                    "name": siteName
                 },
                 "image": {
-                    "@id": "https://cdn.jsdelivr.net/gh/yanglr/images/webster-dict-jekyll1.png"
+                    "@id": imageUrl
                 },
-                "articleSection": "github的jekyll是什么意思-大白的故事 ",
+                "articleSection": this.$title,
                 "inLanguage": "zh-CN",
                 "potentialAction": [
                     {
                         "@type": "CommentAction",
                         "name": "Comment",
                         "target": [
-                            "https://dbdgs.cn/why-name-jekyll.html"
+                            pageUrl
                         ]
                     }
                 ]
             },
             {
                 "@type": "Person",
-                "@id": "https://dbdgs.cn",
-                "name": "大白的故事"
+                "@id": siteUrl,
+                "name": siteName
             },
             {
                 "@context": "https://schema.org/",
                 "@type": "Recipe",
-                "name": "最著名的静态站点生成器为什么取名为Jekyll? Jekyll是一个简单的静态网站生成器，github pages默认就会用这个生成器，用于生成个人、项目或组织的网站。它由GitHub联合创始人汤姆·普雷斯顿·沃纳(Tom Preston-Werner)用Ruby编写，并根据MIT许可证发布。 Je [&hellip;]",
-                "description": "最著名的静态站点生成器为什么取名为Jekyll? Jekyll是一个简单的静态网站生成器，github pages默认就会用这个生成器，用于生成个人、项目或组织的网站。它由GitHub联合创始人汤姆·普雷斯顿·沃纳(Tom Preston-Werner)用Ruby编写，并根据MIT许可证发布。 Je [&hellip;]",
+                "name": this.$description,
+                "description": this.$description,
                 "author": {
                     "@type": "Person",
-                    "name": "大白的故事"
+                    "name": siteName
                 },
                 "image": [
-                    "https://cdn.jsdelivr.net/gh/yanglr/images/webster-dict-jekyll1.png"
+                    imageUrl
                 ],
-                "url": "https://dbdgs.cn/why-name-jekyll.html",
+                "url": pageUrl,
                 "recipeIngredient": [
                     "第1步",
                     "第2步",
@@ -152,25 +167,25 @@ export default {
                     {
                         "@type": "HowToStep",
                         "text": "第1步",
-                        "url": "https://dbdgs.cn/why-name-jekyll.html#step-1"
+                        "url": pageUrl + "#step-1"
                     },
                     {
                         "@type": "HowToStep",
                         "text": "第2步",
-                        "url": "https://dbdgs.cn/why-name-jekyll.html#step-2"
+                        "url": pageUrl + "#step-2"
                     },
                     {
                         "@type": "HowToStep",
                         "text": "第3步",
-                        "url": "https://dbdgs.cn/why-name-jekyll.html#step-3"
+                        "url": pageUrl + "#step-3"
                     }
                 ],
-                "datePublished": "",
-                "@id": "https://dbdgs.cn/why-name-jekyll.html",
+                "datePublished": publishedTime,
+                "@id": pageUrl,
                 "isPartOf": {
-                    "@id": "https://dbdgs.cn"
+                    "@id": siteUrl
                 },
-                "mainEntityOfPage": "https://dbdgs.cn"
+                "mainEntityOfPage": siteUrl
             }
         ]
     };
