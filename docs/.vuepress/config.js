@@ -9,6 +9,23 @@ const autometa_options = {
   canonical_base: 'https://dbdgs.cn',
 };
 
+const myJsonld = `
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://code.luasoftware.com/",
+  "author": {
+    "@type": "Person",
+    "name": "Desmond Lua"
+  },
+  "description": "Tutorials and snippets for programming languages, frameworks, tools, etc.",
+  "image": "https://code.luasoftware.com/img/cover.jpg",
+  "thumbnailUrl": "https://code.luasoftware.com/img/logo.png",
+  "license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
+  "name": "Lua Software Code"
+}
+`;
+
 module.exports = {
   title: "大白的故事",
   description: '大白的技术故事，专注于分享IT前沿技术、干货知识、热点资讯等，同时分享硬核的自媒体赚钱方法、推广技巧和运营实战，技术文章涵盖python,dotnet,node.js,git,github等。', // 描述,以 <meta> 标签渲染到页面html中
@@ -18,6 +35,7 @@ module.exports = {
     ['meta', { name: 'keywords', content: '大白的故事,极客中心,个人技术博客,后台开发面试题,技术文档' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
+    // ['script', { type: 'application/ld+json' }, myJsonld ],
   ],
   markdown: {
     lineNumbers: true // 代码行号
@@ -117,6 +135,12 @@ module.exports = {
         baseURL: 'https://dbdgs.cn', // base url for your canonical link, optional, default: ''
         stripExtension: false // strip '.html' , optional, default: false
       }
+    ],
+    [
+      {
+        name: 'jsonld-plugin',
+        globalUIComponents: ['SchemaStructuredData'],
+      },
     ],
     ['autometa', autometa_options],
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）

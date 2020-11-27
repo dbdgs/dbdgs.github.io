@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
+    "debug": "node --nolazy --inspect-brk=9229 ./node_modules/.bin/vuepress dev docs --no-cache",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
     "baiduPush": "node utils/baiduPush.js https://dbdgs.cn && bash baiduPush.sh",
