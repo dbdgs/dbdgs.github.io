@@ -5,9 +5,9 @@
   "author": {
     "name": "gaoyi(Evan) Xu"
   },
-  "homepage": "https://github.com/xugaoyi/vuepress-theme-vdoing#readme",
+  "homepage": "https://github.com/dbdgs/dbdgs.github.io#readme",
   "bugs": {
-    "url": "https://github.com/xugaoyi/vuepress-theme-vdoing/issues"
+    "url": "https://github.com/dbdgs/dbdgs.github.io/issues"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "license": "MIT",
   "main": "index.js",
   "maintainers": [{
-    "name": "Evan xu",
-    "email": "894072666@qq.com"
+    "name": "大白的故事",
+    "email": "legege007@yeah.net"
   }]
 }
