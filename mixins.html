@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>混入(Mixins) | 大白的故事</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/favicon.ico">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ImageObject",
+      "@id": "https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg",
+      "inLanguage": "zh-CN",
+      "url": "https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg",
+      "width": 266,
+      "height": 266,
+      "caption": "混入(Mixins) - 大白的故事"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dbdgs.cn/mixins.html",
+      "url": "https://dbdgs.cn/mixins.html",
+      "name": "混入(Mixins) | 大白的故事",
+      "isPartOf": {
+        "@id": "https://dbdgs.cn",
+        "name": "大白的故事"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://dbdgs.cn",
+        "name": "大白的故事"
+      },
+      "datePublished": "2020-02-23T15:47:03.000Z",
+      "dateModified": "2020-11-25T03:53:07.000Z",
+      "description": "stylus混入(Mixins)\n混入(Mixins)\n混入和函数定义方法一致，但是应用却大相径庭。\n一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。",
+      "inLanguage": "zh-CN",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://dbdgs.cn/mixins.html"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "article",
+      "@id": "https://dbdgs.cn/mixins.html",
+      "isPartOf": {
+        "@id": "https://dbdgs.cn/mixins.html"
+      },
+      "author": {
+        "@id": "https://dbdgs.cn",
+        "name": "大白的故事"
+      },
+      "headline": "混入(Mixins) | 大白的故事",
+      "datePublished": "2020-02-23T15:47:03.000Z",
+      "dateModified": "2020-11-25T03:53:07.000Z",
+      "commentCount": 30,
+      "publisher": {
+        "@id": "https://dbdgs.cn",
+        "name": "大白的故事"
+      },
+      "image": {
+        "@id": "https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg"
+      },
+      "articleSection": "混入(Mixins) | 大白的故事",
+      "inLanguage": "zh-CN",
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://dbdgs.cn/mixins.html"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dbdgs.cn",
+      "name": "大白的故事"
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "name": "stylus混入(Mixins)\n混入(Mixins)\n混入和函数定义方法一致，但是应用却大相径庭。\n一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。",
+      "description": "stylus混入(Mixins)\n混入(Mixins)\n混入和函数定义方法一致，但是应用却大相径庭。\n一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。",
+      "author": {
+        "@type": "Person",
+        "name": "大白的故事"
+      },
+      "image": [
+        "https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg"
+      ],
+      "url": "https://dbdgs.cn/mixins.html",
+      "recipeIngredient": [
+        "第1步",
+        "第2步",
+        "第3步",
+        "第4步"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "text": "第1步",
+          "url": "https://dbdgs.cn/mixins.html#step-1"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "第2步",
+          "url": "https://dbdgs.cn/mixins.html#step-2"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "第3步",
+          "url": "https://dbdgs.cn/mixins.html#step-3"
+        }
+      ],
+      "datePublished": "2020-02-23T15:47:03.000Z",
+      "@id": "https://dbdgs.cn/mixins.html",
+      "isPartOf": {
+        "@id": "https://dbdgs.cn"
+      },
+      "mainEntityOfPage": "https://dbdgs.cn"
+    }
+  ]
+}
+</script>
+<link rel='canonical' href='https://dbdgs.cn/mixins.html'/>
+    <meta name="description" content="stylus混入(Mixins)
+混入(Mixins)
+混入和函数定义方法一致，但是应用却大相径庭。
+一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。">
+    <meta name="twitter:title" content="混入(Mixins)">
+    <meta name="twitter:description" content="stylus混入(Mixins)
+混入(Mixins)
+混入和函数定义方法一致，但是应用却大相径庭。
+一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://dbdgs.cn/02.%E9%A1%B5%E9%9D%A2/25.stylus/10.%E6%B7%B7%E5%85%A5(Mixins).html">
+    <meta name="twitter:site" content="@yanglr">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="混入(Mixins)">
+    <meta property="og:description" content="stylus混入(Mixins)
+混入(Mixins)
+混入和函数定义方法一致，但是应用却大相径庭。
+一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。">
+    <meta property="og:url" content="https://dbdgs.cn/02.%E9%A1%B5%E9%9D%A2/25.stylus/10.%E6%B7%B7%E5%85%A5(Mixins).html">
+    <meta property="og:site_name" content="Bravo Yeung">
+    <meta property="article:published_time" content="2020-02-23T15:47:03.000Z">
+    <meta property="article:tag" content="null">
+    <meta itemprop="name" content="混入(Mixins)">
+    <meta itemprop="description" content="stylus混入(Mixins)
+混入(Mixins)
+混入和函数定义方法一致，但是应用却大相径庭。
+一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。">
+    <meta name="keywords" content="大白的故事,极客中心,个人技术博客,后台开发面试题,技术文档">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/assets/css/0.styles.e9fcc497.css" as="style"><link rel="preload" href="/assets/js/app.6055ec6f.js" as="script"><link rel="preload" href="/assets/js/3.d45bf914.js" as="script"><link rel="preload" href="/assets/js/2.258f54bf.js" as="script"><link rel="preload" href="/assets/js/15.7da5a983.js" as="script"><link rel="prefetch" href="/assets/js/10.5a33df76.js"><link rel="prefetch" href="/assets/js/11.179b04b4.js"><link rel="prefetch" href="/assets/js/12.7544ffb7.js"><link rel="prefetch" href="/assets/js/13.917a6232.js"><link rel="prefetch" href="/assets/js/14.e60997a3.js"><link rel="prefetch" href="/assets/js/16.02004572.js"><link rel="prefetch" href="/assets/js/17.64355c59.js"><link rel="prefetch" href="/assets/js/18.5b0875f0.js"><link rel="prefetch" href="/assets/js/19.9f02afdb.js"><link rel="prefetch" href="/assets/js/20.de54b33d.js"><link rel="prefetch" href="/assets/js/21.0a3634c3.js"><link rel="prefetch" href="/assets/js/22.245cad66.js"><link rel="prefetch" href="/assets/js/23.4685373d.js"><link rel="prefetch" href="/assets/js/24.1c487738.js"><link rel="prefetch" href="/assets/js/25.7a112079.js"><link rel="prefetch" href="/assets/js/26.b991cb1b.js"><link rel="prefetch" href="/assets/js/27.8a6a65ef.js"><link rel="prefetch" href="/assets/js/28.400b79d9.js"><link rel="prefetch" href="/assets/js/29.871ea6c7.js"><link rel="prefetch" href="/assets/js/30.7d7a1c3d.js"><link rel="prefetch" href="/assets/js/31.6d937d1f.js"><link rel="prefetch" href="/assets/js/32.fd88e4eb.js"><link rel="prefetch" href="/assets/js/33.bdda48ec.js"><link rel="prefetch" href="/assets/js/34.4e348767.js"><link rel="prefetch" href="/assets/js/35.9db35135.js"><link rel="prefetch" href="/assets/js/36.68ba7cb0.js"><link rel="prefetch" href="/assets/js/37.70c17f02.js"><link rel="prefetch" href="/assets/js/38.46de26e4.js"><link rel="prefetch" href="/assets/js/39.d5630dca.js"><link rel="prefetch" href="/assets/js/4.5de19a41.js"><link rel="prefetch" href="/assets/js/40.58ad3ab8.js"><link rel="prefetch" href="/assets/js/41.5a3bd42d.js"><link rel="prefetch" href="/assets/js/42.3d77d1c2.js"><link rel="prefetch" href="/assets/js/43.12753382.js"><link rel="prefetch" href="/assets/js/44.565dafc5.js"><link rel="prefetch" href="/assets/js/45.16b424ef.js"><link rel="prefetch" href="/assets/js/46.b092ef88.js"><link rel="prefetch" href="/assets/js/47.c961dd29.js"><link rel="prefetch" href="/assets/js/48.74ba38f7.js"><link rel="prefetch" href="/assets/js/49.e3e0c088.js"><link rel="prefetch" href="/assets/js/5.fccf381b.js"><link rel="prefetch" href="/assets/js/50.0b84acbf.js"><link rel="prefetch" href="/assets/js/51.6532168e.js"><link rel="prefetch" href="/assets/js/6.e9b4a0de.js"><link rel="prefetch" href="/assets/js/7.f0a8af41.js"><link rel="prefetch" href="/assets/js/8.32bf4b9c.js"><link rel="prefetch" href="/assets/js/9.0f63e993.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e9fcc497.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/nav-logo.png" alt="大白的故事" class="logo"> <span class="site-name can-hide">大白的故事</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/p/8143cc480faf9a11/" class="nav-link">JavaScript</a></li><li class="dropdown-subitem"><a href="/p/802a1ca6f7b71c59/" class="nav-link">Vue</a></li></ul></li><li class="dropdown-item"><h4>学习笔记</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/note/javascript/" class="nav-link">《JavaScript教程》笔记</a></li><li class="dropdown-subitem"><a href="/note/js/" class="nav-link">《JavaScript高级程序设计》笔记</a></li><li class="dropdown-subitem"><a href="/note/es6/" class="nav-link">《ES6 教程》笔记</a></li><li class="dropdown-subitem"><a href="/note/vue/" class="nav-link">《Vue》笔记</a></li><li class="dropdown-subitem"><a href="/note/typescript-axios/" class="nav-link">《TypeScript 从零实现 axios》</a></li><li class="dropdown-subitem"><a href="/note/git/" class="nav-link">《Git》学习笔记</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/ui/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/p/8309a5b876fc95e3/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/p/0a83b083bdf257cb/" class="nav-link">CSS</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/p/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/p/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/p/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/p/41f87d890d0a02af/" class="nav-link">博客搭建</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/p/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/p/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/p/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/p/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><a href="/p/beb6c0bd8a66cea6/" class="link-title">收藏</a> <span class="title" style="display:none;">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/p/beb6c0bd8a66cea6/" class="nav-link">网站</a></li><li class="dropdown-item"><!----> <a href="/p/eee83a9211a70f9d/" class="nav-link">资源</a></li><li class="dropdown-item"><!----> <a href="/p/12df8ace52d493f6/" class="nav-link">Vue资源</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg"> <div class="blogger-info"><h3>大白的故事</h3> <span>终身学习者</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><a href="/web/" class="link-title">前端</a> <span class="title" style="display:none;">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>前端文章</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/p/8143cc480faf9a11/" class="nav-link">JavaScript</a></li><li class="dropdown-subitem"><a href="/p/802a1ca6f7b71c59/" class="nav-link">Vue</a></li></ul></li><li class="dropdown-item"><h4>学习笔记</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/note/javascript/" class="nav-link">《JavaScript教程》笔记</a></li><li class="dropdown-subitem"><a href="/note/js/" class="nav-link">《JavaScript高级程序设计》笔记</a></li><li class="dropdown-subitem"><a href="/note/es6/" class="nav-link">《ES6 教程》笔记</a></li><li class="dropdown-subitem"><a href="/note/vue/" class="nav-link">《Vue》笔记</a></li><li class="dropdown-subitem"><a href="/note/typescript-axios/" class="nav-link">《TypeScript 从零实现 axios》</a></li><li class="dropdown-subitem"><a href="/note/git/" class="nav-link">《Git》学习笔记</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="页面" class="dropdown-title"><a href="/ui/" class="link-title">页面</a> <span class="title" style="display:none;">页面</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/p/8309a5b876fc95e3/" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/p/0a83b083bdf257cb/" class="nav-link">CSS</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/p/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/p/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/p/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/p/41f87d890d0a02af/" class="nav-link">博客搭建</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/p/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/p/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/p/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/p/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="收藏" class="dropdown-title"><a href="/p/beb6c0bd8a66cea6/" class="link-title">收藏</a> <span class="title" style="display:none;">收藏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/p/beb6c0bd8a66cea6/" class="nav-link">网站</a></li><li class="dropdown-item"><!----> <a href="/p/eee83a9211a70f9d/" class="nav-link">资源</a></li><li class="dropdown-item"><!----> <a href="/p/12df8ace52d493f6/" class="nav-link">Vue资源</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>stylus</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mixins.html" aria-current="page" class="active sidebar-link">混入(Mixins)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mixins.html#混入-mixins" class="sidebar-link">混入(Mixins)</a></li></ul></li></ul></section></li></ul> </aside> <div><main class="page"> <div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-f5f35434><div class="articleInfo" data-v-f5f35434><ul class="breadcrumbs" data-v-f5f35434><li data-v-f5f35434><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-f5f35434></a></li> <li data-v-f5f35434><a href="/ui" title="页面-目录页" data-v-f5f35434>页面</a></li> <li data-v-f5f35434><a href="/ui/#stylus" title="页面#stylus" data-v-f5f35434>stylus</a></li></ul> <div class="info" data-v-f5f35434><div title="作者" class="author iconfont icon-touxiang" data-v-f5f35434><a href="https://github.com/wpfgeek" target="_blank" title="作者" class="beLink" data-v-f5f35434>geekzl.com</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-f5f35434><a href="javascript:;" data-v-f5f35434>2020-02-23</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">
+          混入(Mixins)
+        </h1> <div class="theme-vdoing-content content__default"><h1 id="stylus混入-mixins"><a href="#stylus混入-mixins" class="header-anchor">#</a> stylus混入(Mixins)</h1> <h2 id="混入-mixins"><a href="#混入-mixins" class="header-anchor">#</a> 混入(Mixins)</h2> <p>混入和函数定义方法一致，但是应用却大相径庭。</p> <p>一个简单的混入应用，定义一个超出显示省略号的<code>ellipsis()</code>方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。</p> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">ellipsis</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">overflow</span> hidden</span>
+  <span class="token property-declaration"><span class="token property">white-space</span> nowrap</span>
+  <span class="token property-declaration"><span class="token property">text-overflow</span> ellipsis</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token selector">p</span>
+  <span class="token func"><span class="token function">ellipsis</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>下面有定义的<code>border-radius(n)</code>方法，其却作为一个<em>mixin</em>（如，作为状态调用，而非表达式）调用。</p> <p>当<code>border-radius()</code>选择器中调用时候，属性会被扩展并复制在选择器中。</p> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">border-radius</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">-webkit-border-radius</span> n</span>
+  <span class="token property-declaration"><span class="token property">-moz-border-radius</span> n</span>
+  <span class="token property-declaration"><span class="token property">border-radius</span> n</span>
+
+<span class="token selector">form input[type=button]</span>
+  <span class="token func"><span class="token function">border-radius</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token unit">px</span><span class="token punctuation">)</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>编译成：</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">form input[type=button]</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+  <span class="token property">-moz-border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>使用混入书写，你可以完全忽略括号，提供梦幻般私有属性的支持。</p> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">border-radius</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">-webkit-border-radius</span> n</span>
+  <span class="token property-declaration"><span class="token property">-moz-border-radius</span> n</span>
+  <span class="token property-declaration"><span class="token property">border-radius</span> n</span>
+
+<span class="token selector">form input[type=button]</span>
+  <span class="token property-declaration"><span class="token property">border-radius</span> <span class="token number">5</span><span class="token unit">px</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>注意到我们混合书写中的<code>border-radius</code>当作了属性，而不是一个递归函数调用。</p> <p>更进一步，我们可以利用<code>arguments</code>这个局部变量，传递可以包含多值的表达式。</p> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token func"><span class="token function">border-radius</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">-webkit-border-radius</span> arguments</span>
+  <span class="token property-declaration"><span class="token property">-moz-border-radius</span> arguments</span>
+  <span class="token property-declaration"><span class="token property">border-radius</span> arguments</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>现在，我们可以像这样子传值：<code>border-radius 1px 2px / 3px 4px</code>!</p> <p>另外一个很赞的应用是特定的私有前缀支持——例如IE浏览器的透明度：</p> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">support-for-ie</span> <span class="token operator">?=</span> <span class="token boolean">true</span></span>
+
+<span class="token func"><span class="token function">opacity</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span></span>
+  <span class="token property-declaration"><span class="token property">opacity</span> n</span>
+  <span class="token statement"><span class="token keyword">if</span> support-for-ie</span>
+    <span class="token property-declaration"><span class="token property">filter</span> unquote<span class="token punctuation">(</span><span class="token string">'progid:DXImageTransform.Microsoft.Alpha(Opacity='</span> <span class="token operator">+</span> <span class="token func"><span class="token function">round</span><span class="token punctuation">(</span>n <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">+</span> </span><span class="token string">')'</span><span class="token punctuation">)</span></span>
+
+<span class="token selector">#logo</span>
+  <span class="token selector">&amp;:hover</span>
+    <span class="token property-declaration"><span class="token property">opacity</span> <span class="token number">0.5</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>渲染为：</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">#logo:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 0.5<span class="token punctuation">;</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Alpha</span><span class="token punctuation">(</span>Opacity=50<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>来源：<a href="https://www.zhangxinxu.com/jq/stylus/mixins.php" target="_blank" rel="noopener noreferrer">https://www.zhangxinxu.com/jq/stylus/mixins.php<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/xugaoyi/vuepress-theme-vdoing/edit/main/docs/02.页面/25.stylus/10.混入(Mixins).md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2020/11/25, 03:53:07</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/css-tips.html" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">CSS教程和技巧收藏</div></a> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/css-tips.html" class="prev">CSS教程和技巧收藏</a></span> <!----></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/common-git-commands.html"><div>常用Git命令清单</div></a> <span>11-18</span></dt></dl><dl><dd>02</dd> <dt><a href="/git-branch-principles.html"><div>Git分支-分支原理</div></a> <span>11-18</span></dt></dl><dl><dd>03</dd> <dt><a href="/two-minutes-rule.html"><div>2分钟规则</div></a> <span>11-09</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div> </main></div> <div class="footer"><div class="icons"><a href="mailto:legege007@yeah.net" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/wpfgeek" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/dbdgs/dbdgs.github.io" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2020
+     <span>大白的故事 | <a href="https://github.com/dbdgs/dbdgs.github.io/blob/main/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">跟随系统</li><li class="iconfont icon-rijianmoshi">浅色模式</li><li class="iconfont icon-yejianmoshi">深色模式</li><li class="iconfont icon-yuedu">阅读模式</li></ul></div></div> <!----></div><div class="global-ui"><div></div><div></div></div></div>
+    <script src="/assets/js/app.6055ec6f.js" defer></script><script src="/assets/js/3.d45bf914.js" defer></script><script src="/assets/js/2.258f54bf.js" defer></script><script src="/assets/js/15.7da5a983.js" defer></script>
+  </body>
+</html>
