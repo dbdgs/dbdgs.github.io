@@ -84,6 +84,7 @@ import { resolveSidebarItems } from '../util'
 import storage from 'good-storage' // 本地存储
 import _ from 'lodash'
 
+import moment from 'moment';
 import * as dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone'
@@ -174,14 +175,14 @@ export default {
     }
 
     var siteUrl = this.$site.themeConfig.domain;      
-    if (typeof this.$ssrContext !== "undefined" || this.$page.path.length <= 1) {    
+    if (typeof this.$ssrContext !== "undefined") {    
       var pageTitle = this.$page.title ? this.$page.title.toString().replace(/["|'|\\]/g, '') : null;
       var imageUrl = this.$page.frontmatter.image ? this.$page.frontmatter.image : 'https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg';
       var siteName = this.$site.title || null;
-      var publishedTime = dayjs(this.$page.frontmatter.date).toISOString() || dayjs(this.$page.lastUpdated).toISOString();
-      var modifiedTime = dayjs(this.$page.lastUpdated).toISOString();
+      var publishedTime = dayjs(this.$page.frontmatter.date).toISOString() || dayjs(this.$page.lastUpdated).toISOString() || moment().toISOString();
+      var modifiedTime = dayjs(this.$page.lastUpdated).toISOString() || moment().toISOString();
       var pageUrl = siteUrl + this.$page.path;
-      var pageType = pageUrl == siteUrl ? 'website' : 'article' ;
+      var pageType = this.$page.path.length <= 1 ? 'website' : 'article' ;
       // var author = this.$site.themeConfig.personalInfo ? this.$site.themeConfig.personalInfo : null;    
 
       const data =
@@ -210,7 +211,7 @@ export default {
                       "@id": siteUrl,
                       "name": siteName
                   },
-                  "datePublished": "",
+                  "datePublished": publishedTime,
                   "dateModified": modifiedTime,
                   "description": this.$description,
                   "inLanguage": "zh-CN",
