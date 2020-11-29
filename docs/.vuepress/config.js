@@ -9,6 +9,11 @@ const autometa_options = {
   canonical_base: 'https://dbdgs.cn',
 };
 
+// set your global feed options - override in page frontmatter `feed`
+const feed_options = {
+  canonical_base: 'https://dbdgs.cn'
+};
+
 const myJsonld = `
 {
  "@context": "http://schema.org",
@@ -145,6 +150,7 @@ module.exports = {
       }
     ],
     ['autometa', autometa_options],
+    ['feed', feed_options],
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
       thirdparty: [ // 可选，默认 []
         {

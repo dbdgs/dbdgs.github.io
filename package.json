@@ -36,6 +36,7 @@
   "dependencies": {
     "dayjs": "^1.9.6",
     "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-feed": "^0.1.9",
     "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
