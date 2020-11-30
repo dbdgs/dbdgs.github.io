@@ -149,6 +149,7 @@ module.exports = {
         stripExtension: false // strip '.html' , optional, default: false
       }
     ],
+    ['fulltext-search'],
     ['autometa', autometa_options],
     ['feed', feed_options],
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
