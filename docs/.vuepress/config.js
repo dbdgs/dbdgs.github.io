@@ -40,6 +40,15 @@ module.exports = {
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: '大白的故事,极客中心,个人技术博客,后台开发面试题,技术文档' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+    [
+      'link',
+      {
+        rel: 'search',
+        type: "application/opensearchdescription+xml",
+        href: "/opensearch.xml",
+        title: "极客中心"
+      }
+    ]
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
     // ['script', { type: 'application/ld+json' }, myJsonld ],
   ],
