@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dbdgs.cn</id>
-    <title>大白的故事</title>
-    <updated>2020-11-30T12:32:26.352Z</updated>
+    <title>dbdgs | 大白的故事</title>
+    <updated>2020-12-01T13:23:47.685Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://dbdgs.cn"/>
     <link rel="self" href="https://dbdgs.cn/feed.atom"/>
