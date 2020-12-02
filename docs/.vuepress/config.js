@@ -46,7 +46,7 @@ module.exports = {
         rel: 'search',
         type: "application/opensearchdescription+xml",
         href: "/opensearch.xml",
-        title: "极客中心"
+        title: "大白的故事"
       }
     ]
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
