@@ -48,8 +48,8 @@ module.exports = {
         href: "/opensearch.xml",
         title: "大白的故事"
       }
-    ]
-    // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
+    ],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1'}]
     // ['script', { type: 'application/ld+json' }, myJsonld ],
   ],
   locales: {
