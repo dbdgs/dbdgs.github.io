@@ -19,8 +19,8 @@
     ],
     "shortcuts": [
         {
-            "name": "个人介绍",
-            "short_name": "个人介绍",
+            "name": "关于我",
+            "short_name": "关于我",
             "icons": [
                 {
                     "src": "https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg",
@@ -30,7 +30,7 @@
                 }
             ],
             "url": "/about/",
-            "description": "个人介绍"
+            "description": "关于我"
         }
     ]
 }
