@@ -4,7 +4,9 @@
       class="blogger"
       v-if="blogger"
     >
-      <img :src="blogger.avatar" />
+      <img :src="blogger.avatar"
+        alt="dbdgs"
+        title="大白的故事" />
       <div class="blogger-info">
         <h3>{{blogger.name}}</h3>
 
