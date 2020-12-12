@@ -1,0 +1,36 @@
+{
+    "name": "大白的故事技术博客",
+    "short_name": "Dbdgs Blog",
+    "description": "大白的故事技术博客",
+    "lang": "zh-CN",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#5c92d1",
+    "background_color": "#ffffff",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/img/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/ico"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "个人介绍",
+            "short_name": "个人介绍",
+            "icons": [
+                {
+                    "src": "https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg",
+                    "sizes": "460x460",
+                    "purpose": "maskable",
+                    "type": "image/jpg"
+                }
+            ],
+            "url": "/about/",
+            "description": "个人介绍"
+        }
+    ]
+}
