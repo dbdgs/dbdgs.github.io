@@ -7,7 +7,7 @@
       <a
         :href="editLink"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
       >{{ editLinkText }}</a>
       <OutboundLink />
     </div>

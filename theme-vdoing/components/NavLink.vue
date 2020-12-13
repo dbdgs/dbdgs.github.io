@@ -12,7 +12,7 @@
     @focusout="focusoutAction"
     class="nav-link external"
     :target="isMailto(link) || isTel(link) ? null : '_blank'"
-    :rel="isMailto(link) || isTel(link) ? null : 'noopener noreferrer'"
+    :rel="isMailto(link) || isTel(link) ? null : 'nofollow noopener noreferrer'"
   >
     {{ item.text }}
     <OutboundLink />

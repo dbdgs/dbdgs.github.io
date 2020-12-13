@@ -84,7 +84,7 @@ function renderExternal (h, to, text) {
     attrs: {
       href: to,
       target: '_blank',
-      rel: 'noopener noreferrer'
+      rel: 'nofollow noopener noreferrer'
     },
     class: {
       'sidebar-link': true

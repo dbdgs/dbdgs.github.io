@@ -25,7 +25,7 @@
       :href="repoLink"
       class="repo-link"
       target="_blank"
-      rel="noopener noreferrer"
+      rel="nofollow noopener noreferrer"
     >
       {{ repoLabel }}
       <OutboundLink />
