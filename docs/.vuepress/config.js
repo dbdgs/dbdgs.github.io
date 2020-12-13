@@ -61,7 +61,9 @@ module.exports = {
     }
   },
   markdown: {
-    lineNumbers: true // 代码行号
+    lineNumbers: true, // 代码行号
+    externalLinks:
+      { target: '_blank', rel: 'nofollow noopener noreferrer' }
   },
 
   // theme: 'vdoing', // 使用依赖包主题
