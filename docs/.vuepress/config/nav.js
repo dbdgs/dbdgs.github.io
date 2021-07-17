@@ -1,6 +1,19 @@
 module.exports = [
   {text: '首页', link: '/'},
   {
+    text: '算法',
+    link: '/algo/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [
+      {
+        text: '学习笔记', 
+        items:
+        [
+          {text: 'LeetCode题解导航', link: '/leetcode/'}
+        ]
+      }
+    ]
+  },
+  {
     text: '前端',
     link: '/web/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
@@ -8,10 +21,9 @@ module.exports = [
         text: '学习笔记', 
         items:
         [
-          {text: 'TypeScript笔记', link: '/typescript/'},
-          {text: 'ES6笔记', link: '/es6/'},
-          {text: 'Vue笔记', link: '/vue/'}
-        ]}
+          {text: 'TypeScript笔记', link: '/typescript/'}
+        ]
+      }
     ]
   },
   {
