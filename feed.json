@@ -6,26 +6,6 @@
     "description": "大白的技术故事，专注于分享IT前沿技术、干货知识、热点资讯等，同时分享硬核的自媒体赚钱方法、推广技巧和运营实战，技术文章涵盖python,dotnet,node.js,git,github等。",
     "items": [
         {
-            "id": "https://dbdgs.cn/p/new-commands-principles.html",
-            "url": "https://dbdgs.cn/p/new-commands-principles.html",
-            "title": "new命令原理",
-            "summary": "new命令原理\n使用new命令时，它后面的函数依次执行下面的步骤：\n\n创建一个空对象，作为将要返回的实例对象。\n将这个空对象的原型，指向构造函数的prototype属性。\n将这个空对象赋值给函数内部的this关键字。\n开始执行构造函数内部的代码。\n如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。",
-            "date_modified": "2019-12-25T14:27:01.000Z"
-        },
-        {
-            "id": "https://dbdgs.cn/vue-dev-prepare.html",
-            "url": "https://dbdgs.cn/vue-dev-prepare.html",
-            "title": "Vue项目开发前的一些准备工作",
-            "summary": "Vue项目开发前的一些准备工作\n在使用Vue CLi创建一个项目之后，正式进入开发前可能需要做一些工作，比如引入重置样式表、解决移动端点击300ms延迟等等。",
-            "date_modified": "2020-02-21T14:40:19.000Z"
-        },
-        {
-            "id": "https://dbdgs.cn/note/wx-miniprogram/",
-            "url": "https://dbdgs.cn/note/wx-miniprogram/",
-            "title": "小程序笔记",
-            "date_modified": "2019-12-25T14:27:01.000Z"
-        },
-        {
             "id": "https://dbdgs.cn/common-used-meta.html",
             "url": "https://dbdgs.cn/common-used-meta.html",
             "title": "常用meta整理",
@@ -72,6 +52,35 @@
             "url": "https://dbdgs.cn/baidu-shoulu-github.html",
             "title": "解决百度无法收录搭建在GitHub上的个人博客的问题",
             "summary": "解决百度无法收录搭建在GitHub上的静态博客的问题\n注意\n如果你正在寻找本博客的搭建文档，博主建议您查看这个仓库的README。\n\n背景\n由于GitHub禁止百度爬虫访问，造成托管在GitHub Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误。",
+            "date_modified": "2019-12-25T14:27:01.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/p/new-commands-principles.html",
+            "url": "https://dbdgs.cn/p/new-commands-principles.html",
+            "title": "new命令原理",
+            "summary": "new命令原理\n使用new命令时，它后面的函数依次执行下面的步骤：\n\n创建一个空对象，作为将要返回的实例对象。\n将这个空对象的原型，指向构造函数的prototype属性。\n将这个空对象赋值给函数内部的this关键字。\n开始执行构造函数内部的代码。\n如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。",
+            "date_modified": "2019-12-25T14:27:01.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/vue-dev-prepare.html",
+            "url": "https://dbdgs.cn/vue-dev-prepare.html",
+            "title": "Vue项目开发前的一些准备工作",
+            "summary": "Vue项目开发前的一些准备工作\n在使用Vue CLi创建一个项目之后，正式进入开发前可能需要做一些工作，比如引入重置样式表、解决移动端点击300ms延迟等等。",
+            "date_modified": "2020-02-21T14:40:19.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/note/wx-miniprogram/",
+            "url": "https://dbdgs.cn/note/wx-miniprogram/",
+            "title": "小程序笔记",
+            "summary": "每个邮箱仅能注册一个小程序。",
+            "date_modified": "2019-12-25T14:27:01.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/about/",
+            "url": "https://dbdgs.cn/about/",
+            "title": "关于",
+            "summary": "这是一个兼具博客文章、知识管理、文档查找的个人网站，主要内容是Web前端技术。如果你喜欢这个博客&主题欢迎到GitHub点个Star，或者交换友链 ( •̀ ω •́ )✧",
+            "image": "https://github-readme-stats.vercel.app/api/pin/?username=xugaoyi&repo=vuepress-theme-vdoing",
             "date_modified": "2019-12-25T14:27:01.000Z"
         },
         {
@@ -138,13 +147,6 @@
             "title": "一个完美主义者的自我救赎",
             "summary": "一个完美主义者的自我救赎\n最近，看到一个心理测试题是测试你是否有完美主义：\n\n（1）你是不是经常为自己设定目标，而且最终往往达不到那些目标？\n（2）当一件事件做得不够好时，你是否有再试一次的想法？\n（3）你是否休息时仍想着学习、工作、或者其他还没有解决的事？\n（4）如果遇到别人说话或打岔，破坏了你的注意力，你是否觉得不太高兴？\n（5）你是否常常会在事后想，如果当时能换成另一种方式来解决，也许会更加理想？\n\n如果上面的问题，你的回答大部分是肯定的，那么你就有完美主义倾向。",
             "date_modified": "2020-01-16T15:15:27.000Z"
-        },
-        {
-            "id": "https://dbdgs.cn/why-being-addicted.html",
-            "url": "https://dbdgs.cn/why-being-addicted.html",
-            "title": "反向拆解让人上瘾的套路，找回自律",
-            "summary": "反向拆解让人上瘾的套路，找回自律\n当你打开手机准备学习或者查个资料的时候，很有可能不知不觉的就脱离的正规... 某某app发来通知：xx明星官宣啦、xx手游重磅上线，一起开启修仙之旅吧！ xx结衣发布新番-4k画质&amp;AR体验、99+未读信息、支付宝到账100万元.... 你心想，就看一会，就一会儿... 不知不觉两三个小时过去了，你开始焦躁、后悔、自责。第二天，你又掉进相同的坑里。你可能会纳闷，为什么我的自制力这么差？为什么对某件事欲罢不能？",
-            "date_modified": "2020-07-22T13:05:49.000Z"
         }
     ]
 }
