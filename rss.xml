@@ -4,7 +4,7 @@
         <title>dbdgs | 大白的故事</title>
         <link>https://dbdgs.cn</link>
         <description>大白的技术故事，专注于分享IT前沿技术、干货知识、热点资讯等，同时分享硬核的自媒体赚钱方法、推广技巧和运营实战，技术文章涵盖python,dotnet,node.js,git,github等。</description>
-        <lastBuildDate>Sat, 17 Jul 2021 03:08:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 Jul 2021 03:12:49 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://dbdgs.cn/feed.atom" rel="self" type="application/rss+xml"/>
