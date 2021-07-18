@@ -71,7 +71,7 @@ module.exports = {
 
   themeConfig: { // 主题配置
     nav,
-    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebarDepth: 3, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/nav-logo.png', // 导航栏logo
     repo: 'dbdgs/dbdgs.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
