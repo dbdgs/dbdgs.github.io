@@ -4,7 +4,7 @@
         <title>dbdgs | 大白的故事</title>
         <link>https://dbdgs.cn</link>
         <description>大白的技术故事，专注于分享IT前沿技术、干货知识、热点资讯等，同时分享硬核的自媒体赚钱方法、推广技巧和运营实战，技术文章涵盖python,dotnet,node.js,git,github等。</description>
-        <lastBuildDate>Tue, 20 Jul 2021 05:48:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 Jul 2021 07:17:19 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://dbdgs.cn/feed.atom" rel="self" type="application/rss+xml"/>
@@ -70,18 +70,6 @@ README文件带关键字查询]]></description>
             <description><![CDATA[`js]]></description>
         </item>
         <item>
-            <title><![CDATA[解决百度无法收录搭建在GitHub上的个人博客的问题]]></title>
-            <link>https://dbdgs.cn/baidu-shoulu-github.html</link>
-            <guid>https://dbdgs.cn/baidu-shoulu-github.html</guid>
-            <pubDate>Wed, 25 Dec 2019 14:27:01 GMT</pubDate>
-            <description><![CDATA[解决百度无法收录搭建在GitHub上的静态博客的问题
-注意
-如果你正在寻找本博客的搭建文档，博主建议您查看这个仓库的README。
-
-背景
-由于GitHub禁止百度爬虫访问，造成托管在GitHub Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误。]]></description>
-        </item>
-        <item>
             <title><![CDATA[new命令原理]]></title>
             <link>https://dbdgs.cn/p/new-commands-principles.html</link>
             <guid>https://dbdgs.cn/p/new-commands-principles.html</guid>
@@ -94,6 +82,18 @@ README文件带关键字查询]]></description>
 将这个空对象赋值给函数内部的this关键字。
 开始执行构造函数内部的代码。
 如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[解决百度无法收录搭建在GitHub上的个人博客的问题]]></title>
+            <link>https://dbdgs.cn/baidu-shoulu-github.html</link>
+            <guid>https://dbdgs.cn/baidu-shoulu-github.html</guid>
+            <pubDate>Wed, 25 Dec 2019 14:27:01 GMT</pubDate>
+            <description><![CDATA[解决百度无法收录搭建在GitHub上的静态博客的问题
+注意
+如果你正在寻找本博客的搭建文档，博主建议您查看这个仓库的README。
+
+背景
+由于GitHub禁止百度爬虫访问，造成托管在GitHub Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误。]]></description>
         </item>
         <item>
             <title><![CDATA[Vue项目开发前的一些准备工作]]></title>
@@ -147,6 +147,16 @@ README文件带关键字查询]]></description>
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[提高记忆的技巧]]></title>
+            <link>https://dbdgs.cn/memory-tips.html</link>
+            <guid>https://dbdgs.cn/memory-tips.html</guid>
+            <pubDate>Fri, 03 Jan 2020 14:34:48 GMT</pubDate>
+            <description><![CDATA[提高记忆的技巧
+
+多个感官并用
+记忆时调用一切感官。没人的话可以大声阅读，有人的话可以默念，轻微摇晃手指等，有助于保持专注。]]></description>
+        </item>
+        <item>
             <title><![CDATA[自律小建议]]></title>
             <link>https://dbdgs.cn/autonomy-suggestions.html</link>
             <guid>https://dbdgs.cn/autonomy-suggestions.html</guid>
@@ -160,16 +170,6 @@ README文件带关键字查询]]></description>
 排除外界干扰
 
 手机调到勿扰，在图书馆学习等]]></description>
-        </item>
-        <item>
-            <title><![CDATA[提高记忆的技巧]]></title>
-            <link>https://dbdgs.cn/memory-tips.html</link>
-            <guid>https://dbdgs.cn/memory-tips.html</guid>
-            <pubDate>Fri, 03 Jan 2020 14:34:48 GMT</pubDate>
-            <description><![CDATA[提高记忆的技巧
-
-多个感官并用
-记忆时调用一切感官。没人的话可以大声阅读，有人的话可以默念，轻微摇晃手指等，有助于保持专注。]]></description>
         </item>
         <item>
             <title><![CDATA[处理问题的思路]]></title>

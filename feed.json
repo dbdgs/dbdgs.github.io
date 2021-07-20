@@ -48,17 +48,17 @@
             "date_modified": "2019-12-26T15:57:32.000Z"
         },
         {
-            "id": "https://dbdgs.cn/baidu-shoulu-github.html",
-            "url": "https://dbdgs.cn/baidu-shoulu-github.html",
-            "title": "解决百度无法收录搭建在GitHub上的个人博客的问题",
-            "summary": "解决百度无法收录搭建在GitHub上的静态博客的问题\n注意\n如果你正在寻找本博客的搭建文档，博主建议您查看这个仓库的README。\n\n背景\n由于GitHub禁止百度爬虫访问，造成托管在GitHub Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误。",
-            "date_modified": "2019-12-25T14:27:01.000Z"
-        },
-        {
             "id": "https://dbdgs.cn/p/new-commands-principles.html",
             "url": "https://dbdgs.cn/p/new-commands-principles.html",
             "title": "new命令原理",
             "summary": "new命令原理\n使用new命令时，它后面的函数依次执行下面的步骤：\n\n创建一个空对象，作为将要返回的实例对象。\n将这个空对象的原型，指向构造函数的prototype属性。\n将这个空对象赋值给函数内部的this关键字。\n开始执行构造函数内部的代码。\n如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。",
+            "date_modified": "2019-12-25T14:27:01.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/baidu-shoulu-github.html",
+            "url": "https://dbdgs.cn/baidu-shoulu-github.html",
+            "title": "解决百度无法收录搭建在GitHub上的个人博客的问题",
+            "summary": "解决百度无法收录搭建在GitHub上的静态博客的问题\n注意\n如果你正在寻找本博客的搭建文档，博主建议您查看这个仓库的README。\n\n背景\n由于GitHub禁止百度爬虫访问，造成托管在GitHub Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误。",
             "date_modified": "2019-12-25T14:27:01.000Z"
         },
         {
@@ -107,18 +107,18 @@
             "date_modified": "2020-01-04T11:54:14.000Z"
         },
         {
-            "id": "https://dbdgs.cn/autonomy-suggestions.html",
-            "url": "https://dbdgs.cn/autonomy-suggestions.html",
-            "title": "自律小建议",
-            "summary": "自律小建议\n\n培养专注\n\n练习冥想、瑜伽等\n\n排除外界干扰\n\n手机调到勿扰，在图书馆学习等",
-            "date_modified": "2020-01-03T14:35:18.000Z"
-        },
-        {
             "id": "https://dbdgs.cn/memory-tips.html",
             "url": "https://dbdgs.cn/memory-tips.html",
             "title": "提高记忆的技巧",
             "summary": "提高记忆的技巧\n\n多个感官并用\n记忆时调用一切感官。没人的话可以大声阅读，有人的话可以默念，轻微摇晃手指等，有助于保持专注。",
             "date_modified": "2020-01-03T14:34:48.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/autonomy-suggestions.html",
+            "url": "https://dbdgs.cn/autonomy-suggestions.html",
+            "title": "自律小建议",
+            "summary": "自律小建议\n\n培养专注\n\n练习冥想、瑜伽等\n\n排除外界干扰\n\n手机调到勿扰，在图书馆学习等",
+            "date_modified": "2020-01-03T14:35:18.000Z"
         },
         {
             "id": "https://dbdgs.cn/solve-problems-mind.html",
