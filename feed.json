@@ -14,17 +14,17 @@
             "date_modified": "2020-02-21T12:20:10.000Z"
         },
         {
+            "id": "https://dbdgs.cn/css-tips.html",
+            "url": "https://dbdgs.cn/css-tips.html",
+            "title": "CSS教程和技巧收藏",
+            "date_modified": "2020-08-11T17:13:52.000Z"
+        },
+        {
             "id": "https://dbdgs.cn/mixins.html",
             "url": "https://dbdgs.cn/mixins.html",
             "title": "混入(Mixins)",
             "summary": "stylus混入(Mixins)\n混入(Mixins)\n混入和函数定义方法一致，但是应用却大相径庭。\n一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。",
             "date_modified": "2020-02-23T15:47:03.000Z"
-        },
-        {
-            "id": "https://dbdgs.cn/css-tips.html",
-            "url": "https://dbdgs.cn/css-tips.html",
-            "title": "CSS教程和技巧收藏",
-            "date_modified": "2020-08-11T17:13:52.000Z"
         },
         {
             "id": "https://dbdgs.cn/npm-common-commands.html",
@@ -55,18 +55,18 @@
             "date_modified": "2019-12-25T14:27:01.000Z"
         },
         {
-            "id": "https://dbdgs.cn/vue-dev-prepare.html",
-            "url": "https://dbdgs.cn/vue-dev-prepare.html",
-            "title": "Vue项目开发前的一些准备工作",
-            "summary": "Vue项目开发前的一些准备工作\n在使用Vue CLi创建一个项目之后，正式进入开发前可能需要做一些工作，比如引入重置样式表、解决移动端点击300ms延迟等等。",
-            "date_modified": "2020-02-21T14:40:19.000Z"
-        },
-        {
             "id": "https://dbdgs.cn/p/new-commands-principles.html",
             "url": "https://dbdgs.cn/p/new-commands-principles.html",
             "title": "new命令原理",
             "summary": "new命令原理\n使用new命令时，它后面的函数依次执行下面的步骤：\n\n创建一个空对象，作为将要返回的实例对象。\n将这个空对象的原型，指向构造函数的prototype属性。\n将这个空对象赋值给函数内部的this关键字。\n开始执行构造函数内部的代码。\n如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。",
             "date_modified": "2019-12-25T14:27:01.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/vue-dev-prepare.html",
+            "url": "https://dbdgs.cn/vue-dev-prepare.html",
+            "title": "Vue项目开发前的一些准备工作",
+            "summary": "Vue项目开发前的一些准备工作\n在使用Vue CLi创建一个项目之后，正式进入开发前可能需要做一些工作，比如引入重置样式表、解决移动端点击300ms延迟等等。",
+            "date_modified": "2020-02-21T14:40:19.000Z"
         },
         {
             "id": "https://dbdgs.cn/note/wx-miniprogram/",
@@ -84,19 +84,19 @@
             "date_modified": "2019-12-25T14:27:01.000Z"
         },
         {
+            "id": "https://dbdgs.cn/feynman-method.html",
+            "url": "https://dbdgs.cn/feynman-method.html",
+            "title": "费曼学习法",
+            "summary": "费曼学习法，我很喜欢的一个学习方法，简单来说，就是：通过向别人清楚的解说某一件事或是写一篇浅显易懂的教程文章，来确认自己是否真正弄懂了这件事。\n可以说是在通过向别讲解过程中来对自身的 查缺补漏。",
+            "date_modified": "2020-07-16T10:04:14.000Z"
+        },
+        {
             "id": "https://dbdgs.cn/note-methods.html",
             "url": "https://dbdgs.cn/note-methods.html",
             "title": "笔记方法",
             "summary": "::: center",
             "image": "https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200716105752.jpg",
             "date_modified": "2020-07-16T11:00:55.000Z"
-        },
-        {
-            "id": "https://dbdgs.cn/feynman-method.html",
-            "url": "https://dbdgs.cn/feynman-method.html",
-            "title": "费曼学习法",
-            "summary": "费曼学习法，我很喜欢的一个学习方法，简单来说，就是：通过向别人清楚的解说某一件事或是写一篇浅显易懂的教程文章，来确认自己是否真正弄懂了这件事。\n可以说是在通过向别讲解过程中来对自身的 查缺补漏。",
-            "date_modified": "2020-07-16T10:04:14.000Z"
         },
         {
             "id": "https://dbdgs.cn/strategy-for-efficient-learn.html",
@@ -107,18 +107,18 @@
             "date_modified": "2020-01-04T11:54:14.000Z"
         },
         {
-            "id": "https://dbdgs.cn/memory-tips.html",
-            "url": "https://dbdgs.cn/memory-tips.html",
-            "title": "提高记忆的技巧",
-            "summary": "提高记忆的技巧\n\n多个感官并用\n记忆时调用一切感官。没人的话可以大声阅读，有人的话可以默念，轻微摇晃手指等，有助于保持专注。",
-            "date_modified": "2020-01-03T14:34:48.000Z"
-        },
-        {
             "id": "https://dbdgs.cn/autonomy-suggestions.html",
             "url": "https://dbdgs.cn/autonomy-suggestions.html",
             "title": "自律小建议",
             "summary": "自律小建议\n\n培养专注\n\n练习冥想、瑜伽等\n\n排除外界干扰\n\n手机调到勿扰，在图书馆学习等",
             "date_modified": "2020-01-03T14:35:18.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/memory-tips.html",
+            "url": "https://dbdgs.cn/memory-tips.html",
+            "title": "提高记忆的技巧",
+            "summary": "提高记忆的技巧\n\n多个感官并用\n记忆时调用一切感官。没人的话可以大声阅读，有人的话可以默念，轻微摇晃手指等，有助于保持专注。",
+            "date_modified": "2020-01-03T14:34:48.000Z"
         },
         {
             "id": "https://dbdgs.cn/solve-problems-mind.html",
