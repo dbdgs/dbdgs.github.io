@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dbdgs.cn</id>
     <title>dbdgs | 大白的故事</title>
-    <updated>2021-07-20T04:28:45.216Z</updated>
+    <updated>2021-07-20T05:33:49.747Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://dbdgs.cn"/>
     <link rel="self" href="https://dbdgs.cn/feed.atom"/>
@@ -126,6 +126,14 @@ README文件带关键字查询]]></summary>
         <summary type="html"><![CDATA[这是一个兼具博客文章、知识管理、文档查找的个人网站，主要内容是Web前端技术。如果你喜欢这个博客&主题欢迎到GitHub点个Star，或者交换友链 ( •̀ ω •́ )✧]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[笔记方法]]></title>
+        <id>https://dbdgs.cn/note-methods.html</id>
+        <link href="https://dbdgs.cn/note-methods.html">
+        </link>
+        <updated>2020-07-16T11:00:55.000Z</updated>
+        <summary type="html"><![CDATA[::: center]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[费曼学习法]]></title>
         <id>https://dbdgs.cn/feynman-method.html</id>
         <link href="https://dbdgs.cn/feynman-method.html">
@@ -133,14 +141,6 @@ README文件带关键字查询]]></summary>
         <updated>2020-07-16T10:04:14.000Z</updated>
         <summary type="html"><![CDATA[费曼学习法，我很喜欢的一个学习方法，简单来说，就是：通过向别人清楚的解说某一件事或是写一篇浅显易懂的教程文章，来确认自己是否真正弄懂了这件事。
 可以说是在通过向别讲解过程中来对自身的 查缺补漏。]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[笔记方法]]></title>
-        <id>https://dbdgs.cn/note-methods.html</id>
-        <link href="https://dbdgs.cn/note-methods.html">
-        </link>
-        <updated>2020-07-16T11:00:55.000Z</updated>
-        <summary type="html"><![CDATA[::: center]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[提高学习效率的策略]]></title>
@@ -203,20 +203,12 @@ README文件带关键字查询]]></summary>
         <summary type="html"><![CDATA[回答提示： 一般人回答这个问题过于平常，只说姓名、年龄、工作经验，这些在简历上都有。其实，企业最希望知道的是求职者能否胜任工作，包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事，主要的成就等，要突出积极的个性和做事的能力，说的合情合理企业才会相信。]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[一个完美主义者的自我救赎]]></title>
-        <id>https://dbdgs.cn/perfectionist-comprehend.html</id>
-        <link href="https://dbdgs.cn/perfectionist-comprehend.html">
+        <title type="html"><![CDATA[反向拆解让人上瘾的套路，找回自律]]></title>
+        <id>https://dbdgs.cn/why-being-addicted.html</id>
+        <link href="https://dbdgs.cn/why-being-addicted.html">
         </link>
-        <updated>2020-01-16T15:15:27.000Z</updated>
-        <summary type="html"><![CDATA[一个完美主义者的自我救赎
-最近，看到一个心理测试题是测试你是否有完美主义：
-
-（1）你是不是经常为自己设定目标，而且最终往往达不到那些目标？
-（2）当一件事件做得不够好时，你是否有再试一次的想法？
-（3）你是否休息时仍想着学习、工作、或者其他还没有解决的事？
-（4）如果遇到别人说话或打岔，破坏了你的注意力，你是否觉得不太高兴？
-（5）你是否常常会在事后想，如果当时能换成另一种方式来解决，也许会更加理想？
-
-如果上面的问题，你的回答大部分是肯定的，那么你就有完美主义倾向。]]></summary>
+        <updated>2020-07-22T13:05:49.000Z</updated>
+        <summary type="html"><![CDATA[反向拆解让人上瘾的套路，找回自律
+当你打开手机准备学习或者查个资料的时候，很有可能不知不觉的就脱离的正规... 某某app发来通知：xx明星官宣啦、xx手游重磅上线，一起开启修仙之旅吧！ xx结衣发布新番-4k画质&amp;AR体验、99+未读信息、支付宝到账100万元.... 你心想，就看一会，就一会儿... 不知不觉两三个小时过去了，你开始焦躁、后悔、自责。第二天，你又掉进相同的坑里。你可能会纳闷，为什么我的自制力这么差？为什么对某件事欲罢不能？]]></summary>
     </entry>
 </feed>
