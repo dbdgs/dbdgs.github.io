@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dbdgs.cn</id>
     <title>dbdgs | 大白的故事</title>
-    <updated>2021-07-20T04:00:06.417Z</updated>
+    <updated>2021-07-20T04:22:58.149Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://dbdgs.cn"/>
     <link rel="self" href="https://dbdgs.cn/feed.atom"/>
@@ -118,14 +118,6 @@ README文件带关键字查询]]></summary>
         <summary type="html"><![CDATA[每个邮箱仅能注册一个小程序。]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://dbdgs.cn/about/</id>
-        <link href="https://dbdgs.cn/about/">
-        </link>
-        <updated>2019-12-25T14:27:01.000Z</updated>
-        <summary type="html"><![CDATA[这是一个兼具博客文章、知识管理、文档查找的个人网站，主要内容是Web前端技术。如果你喜欢这个博客&主题欢迎到GitHub点个Star，或者交换友链 ( •̀ ω •́ )✧]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[费曼学习法]]></title>
         <id>https://dbdgs.cn/feynman-method.html</id>
         <link href="https://dbdgs.cn/feynman-method.html">
@@ -201,6 +193,23 @@ README文件带关键字查询]]></summary>
         </link>
         <updated>2019-12-25T14:27:01.000Z</updated>
         <summary type="html"><![CDATA[回答提示： 一般人回答这个问题过于平常，只说姓名、年龄、工作经验，这些在简历上都有。其实，企业最希望知道的是求职者能否胜任工作，包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事，主要的成就等，要突出积极的个性和做事的能力，说的合情合理企业才会相信。]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一个完美主义者的自我救赎]]></title>
+        <id>https://dbdgs.cn/perfectionist-comprehend.html</id>
+        <link href="https://dbdgs.cn/perfectionist-comprehend.html">
+        </link>
+        <updated>2020-01-16T15:15:27.000Z</updated>
+        <summary type="html"><![CDATA[一个完美主义者的自我救赎
+最近，看到一个心理测试题是测试你是否有完美主义：
+
+（1）你是不是经常为自己设定目标，而且最终往往达不到那些目标？
+（2）当一件事件做得不够好时，你是否有再试一次的想法？
+（3）你是否休息时仍想着学习、工作、或者其他还没有解决的事？
+（4）如果遇到别人说话或打岔，破坏了你的注意力，你是否觉得不太高兴？
+（5）你是否常常会在事后想，如果当时能换成另一种方式来解决，也许会更加理想？
+
+如果上面的问题，你的回答大部分是肯定的，那么你就有完美主义倾向。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[反向拆解让人上瘾的套路，找回自律]]></title>
