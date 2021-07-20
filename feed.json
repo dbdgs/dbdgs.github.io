@@ -20,13 +20,6 @@
             "date_modified": "2020-08-11T17:13:52.000Z"
         },
         {
-            "id": "https://dbdgs.cn/mixins.html",
-            "url": "https://dbdgs.cn/mixins.html",
-            "title": "混入(Mixins)",
-            "summary": "stylus混入(Mixins)\n混入(Mixins)\n混入和函数定义方法一致，但是应用却大相径庭。\n一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。",
-            "date_modified": "2020-02-23T15:47:03.000Z"
-        },
-        {
             "id": "https://dbdgs.cn/npm-common-commands.html",
             "url": "https://dbdgs.cn/npm-common-commands.html",
             "title": "npm常用命令",
@@ -52,13 +45,6 @@
             "url": "https://dbdgs.cn/baidu-shoulu-github.html",
             "title": "解决百度无法收录搭建在GitHub上的个人博客的问题",
             "summary": "解决百度无法收录搭建在GitHub上的静态博客的问题\n注意\n如果你正在寻找本博客的搭建文档，博主建议您查看这个仓库的README。\n\n背景\n由于GitHub禁止百度爬虫访问，造成托管在GitHub Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误。",
-            "date_modified": "2019-12-25T14:27:01.000Z"
-        },
-        {
-            "id": "https://dbdgs.cn/p/new-commands-principles.html",
-            "url": "https://dbdgs.cn/p/new-commands-principles.html",
-            "title": "new命令原理",
-            "summary": "new命令原理\n使用new命令时，它后面的函数依次执行下面的步骤：\n\n创建一个空对象，作为将要返回的实例对象。\n将这个空对象的原型，指向构造函数的prototype属性。\n将这个空对象赋值给函数内部的this关键字。\n开始执行构造函数内部的代码。\n如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。",
             "date_modified": "2019-12-25T14:27:01.000Z"
         },
         {
@@ -147,6 +133,20 @@
             "title": "一个完美主义者的自我救赎",
             "summary": "一个完美主义者的自我救赎\n最近，看到一个心理测试题是测试你是否有完美主义：\n\n（1）你是不是经常为自己设定目标，而且最终往往达不到那些目标？\n（2）当一件事件做得不够好时，你是否有再试一次的想法？\n（3）你是否休息时仍想着学习、工作、或者其他还没有解决的事？\n（4）如果遇到别人说话或打岔，破坏了你的注意力，你是否觉得不太高兴？\n（5）你是否常常会在事后想，如果当时能换成另一种方式来解决，也许会更加理想？\n\n如果上面的问题，你的回答大部分是肯定的，那么你就有完美主义倾向。",
             "date_modified": "2020-01-16T15:15:27.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/why-being-addicted.html",
+            "url": "https://dbdgs.cn/why-being-addicted.html",
+            "title": "反向拆解让人上瘾的套路，找回自律",
+            "summary": "反向拆解让人上瘾的套路，找回自律\n当你打开手机准备学习或者查个资料的时候，很有可能不知不觉的就脱离的正规... 某某app发来通知：xx明星官宣啦、xx手游重磅上线，一起开启修仙之旅吧！ xx结衣发布新番-4k画质&amp;AR体验、99+未读信息、支付宝到账100万元.... 你心想，就看一会，就一会儿... 不知不觉两三个小时过去了，你开始焦躁、后悔、自责。第二天，你又掉进相同的坑里。你可能会纳闷，为什么我的自制力这么差？为什么对某件事欲罢不能？",
+            "date_modified": "2020-07-22T13:05:49.000Z"
+        },
+        {
+            "id": "https://dbdgs.cn/two-minutes-rule.html",
+            "url": "https://dbdgs.cn/two-minutes-rule.html",
+            "title": "2分钟规则",
+            "summary": "每当你发现很难开始执行某项任务时，可以试试将其缩减成2分钟的版本。\n\n看一本书 → 看一页书\n写一篇文章 → 写一句话\n跑10公里 → 穿上跑鞋\n做100次俯卧撑 → 做1次俯卧撑\n多吃蔬菜水果 → 吃一个水果\n编写一个程序 → 编写一个函数 → 编写一行代码",
+            "date_modified": "2020-11-09T11:05:29.000Z"
         }
     ]
 }
