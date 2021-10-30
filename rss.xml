@@ -4,7 +4,7 @@
         <title>dbdgs | 大白的故事</title>
         <link>https://dbdgs.cn</link>
         <description>大白的技术故事，专注于分享IT前沿技术、干货知识、热点资讯等，同时分享硬核的自媒体赚钱方法、推广技巧和运营实战，技术文章涵盖python,dotnet,node.js,git,github等。</description>
-        <lastBuildDate>Tue, 20 Jul 2021 07:44:20 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Oct 2021 13:04:02 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://dbdgs.cn/feed.atom" rel="self" type="application/rss+xml"/>
@@ -25,6 +25,16 @@ meta标签提供关于HTML文档的元数据。元数据不会显示在页面上
             <link>https://dbdgs.cn/css-tips.html</link>
             <guid>https://dbdgs.cn/css-tips.html</guid>
             <pubDate>Tue, 11 Aug 2020 17:13:52 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[混入(Mixins)]]></title>
+            <link>https://dbdgs.cn/mixins.html</link>
+            <guid>https://dbdgs.cn/mixins.html</guid>
+            <pubDate>Sun, 23 Feb 2020 15:47:03 GMT</pubDate>
+            <description><![CDATA[stylus混入(Mixins)
+混入(Mixins)
+混入和函数定义方法一致，但是应用却大相径庭。
+一个简单的混入应用，定义一个超出显示省略号的ellipsis()方法，在需要用到的地方只需插入这个方法，其样式会扩展并复制到选择器中。]]></description>
         </item>
         <item>
             <title><![CDATA[npm常用命令]]></title>
@@ -70,6 +80,20 @@ README文件带关键字查询]]></description>
 
 背景
 由于GitHub禁止百度爬虫访问，造成托管在GitHub Pages上的博客无法被百度收录。相关问题可以通过百度站长平台的抓取诊断再现，每次都是403 Forbidden的错误。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[new命令原理]]></title>
+            <link>https://dbdgs.cn/p/new-commands-principles.html</link>
+            <guid>https://dbdgs.cn/p/new-commands-principles.html</guid>
+            <pubDate>Wed, 25 Dec 2019 14:27:01 GMT</pubDate>
+            <description><![CDATA[new命令原理
+使用new命令时，它后面的函数依次执行下面的步骤：
+
+创建一个空对象，作为将要返回的实例对象。
+将这个空对象的原型，指向构造函数的prototype属性。
+将这个空对象赋值给函数内部的this关键字。
+开始执行构造函数内部的代码。
+如果构造函数内有返回值且为对象类型，则返回该对象，否则返回上面创建的实例对象。]]></description>
         </item>
         <item>
             <title><![CDATA[Vue项目开发前的一些准备工作]]></title>
@@ -183,28 +207,6 @@ README文件带关键字查询]]></description>
 （5）你是否常常会在事后想，如果当时能换成另一种方式来解决，也许会更加理想？
 
 如果上面的问题，你的回答大部分是肯定的，那么你就有完美主义倾向。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[反向拆解让人上瘾的套路，找回自律]]></title>
-            <link>https://dbdgs.cn/why-being-addicted.html</link>
-            <guid>https://dbdgs.cn/why-being-addicted.html</guid>
-            <pubDate>Wed, 22 Jul 2020 13:05:49 GMT</pubDate>
-            <description><![CDATA[反向拆解让人上瘾的套路，找回自律
-当你打开手机准备学习或者查个资料的时候，很有可能不知不觉的就脱离的正规... 某某app发来通知：xx明星官宣啦、xx手游重磅上线，一起开启修仙之旅吧！ xx结衣发布新番-4k画质&amp;AR体验、99+未读信息、支付宝到账100万元.... 你心想，就看一会，就一会儿... 不知不觉两三个小时过去了，你开始焦躁、后悔、自责。第二天，你又掉进相同的坑里。你可能会纳闷，为什么我的自制力这么差？为什么对某件事欲罢不能？]]></description>
-        </item>
-        <item>
-            <title><![CDATA[2分钟规则]]></title>
-            <link>https://dbdgs.cn/two-minutes-rule.html</link>
-            <guid>https://dbdgs.cn/two-minutes-rule.html</guid>
-            <pubDate>Mon, 09 Nov 2020 11:05:29 GMT</pubDate>
-            <description><![CDATA[每当你发现很难开始执行某项任务时，可以试试将其缩减成2分钟的版本。
-
-看一本书 → 看一页书
-写一篇文章 → 写一句话
-跑10公里 → 穿上跑鞋
-做100次俯卧撑 → 做1次俯卧撑
-多吃蔬菜水果 → 吃一个水果
-编写一个程序 → 编写一个函数 → 编写一行代码]]></description>
         </item>
     </channel>
 </rss>
